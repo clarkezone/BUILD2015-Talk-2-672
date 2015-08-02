@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="_5.Composition_Animation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_5.Composition_Animation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView x:Name="splitView" DisplayMode="CompactOverlay">
+            <SplitView.Pane>
+                <StackPanel Background="#FF019DCE">
+                    <AppBarButton Foreground="White" x:Name="menu"  HorizontalAlignment="Left" Label=""  Width="51" Height="50" >
+                        <AppBarButton.Icon>
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE700;"/>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                    <AppBarButton Foreground="White" x:Name="showtweets" Margin="0,30,0,0" HorizontalAlignment="Left" Icon="Play" Label="Wall"  Width="51" Height="50" IsCompact="True" />
+                    <AppBarButton Foreground="White" x:Name="followers"  HorizontalAlignment="Left" Icon="People" Label="Followers"  Width="51" Height="50" IsCompact="True" />
+                </StackPanel>
+            </SplitView.Pane>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="659*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="wrapper" Grid.Row="1" Visibility="Collapsed">
+                    <Grid Margin="0,33,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="148" Width="148">
+                        <Rectangle Fill="White" Margin="0"/>
+                        <Image Source="Assets/logo-build-small-color.png"/>
+                    </Grid>
+                    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="tweetPanel"  Margin="0,44,0,0"/>
+                    <Grid x:Name="pickHash" VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" Height="400">
+
+                        <Rectangle Fill="#FF019DCE" Margin="0,0,0,40"/>
+                        <Rectangle Fill="#19000000" Height="33" VerticalAlignment="Top"/>
+                        <ListView x:Name="localTrends" Margin="0,33,0,40" Foreground="White" RequestedTheme="Dark"/>
+                        <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Start"/>
+                        <TextBlock VerticalAlignment="Top" FontFamily="Segoe UI Light" Margin="5,5,0,0" Foreground="White">
+            			<Run Text="Trending Topics"/>
+                        </TextBlock>
+                    </Grid>
+                </Grid>
+                <Grid x:Name="followersHost" Grid.Row="1" >
+
+                </Grid>
+                <Rectangle Fill="#FF019DCE" Margin="0" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                <StackPanel Orientation="Horizontal" Margin="0" d:LayoutOverrides="Height, TopPosition, BottomPosition" HorizontalAlignment="Right">
+
+                    <AppBarButton Foreground="White" x:Name="appBarButton" HorizontalAlignment="Right" Icon="FullScreen" Label="" VerticalAlignment="Stretch" Width="100"  />
+                    <Canvas x:Name="ProfilePictureHost" Width="50" Height="50"></Canvas>
+                </StackPanel>
+                <TextBlock x:Name="ViewTitle" Margin="5,0,0,0" Grid.Row="0" Grid.RowSpan="1" FontFamily="Segoe UI Light" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Foreground="White" >
+                		<Run Text="Followers of @wincomposition"/>
+                </TextBlock>
+            </Grid>
+
+        </SplitView>
+
+
+    </Grid>
+</Page>

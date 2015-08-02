@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>df25a3d6-3588-43e1-a37b-b7fa94f2e9fc</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>21a4b568-b402-4952-bf4a-fb4d187792b0</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Image Include="Assets\Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="SDKmesh.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BasicTimer.cpp" />
+    <ClCompile Include="BitmapDecode.cpp" />
+    <ClCompile Include="Direct3DBase.cpp" />
+    <ClCompile Include="DolphinRenderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="SDKmesh.h" />
+    <ClInclude Include="windows.ui.composition.interop.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="BasicTimer.h" />
+    <ClInclude Include="BitmapDecode.h" />
+    <ClInclude Include="Direct3DBase.h" />
+    <ClInclude Include="DolphinRenderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\WideLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\bob.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust00.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust01.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust02.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust03.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust04.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust05.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust06.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust07.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust08.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust09.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust10.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust11.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust12.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust13.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust14.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust15.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust16.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust17.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust18.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust19.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust20.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust21.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust22.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust23.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust24.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust25.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust26.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust27.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust28.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust29.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust30.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\caust31.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\dolphin.bmp">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\seafloor.bmp">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\smalllogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\splashscreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DolphinDemo_TemporaryKey.pfx" />
+    <None Include="Assets\Dolphin1.sdkmesh" />
+    <None Include="Assets\Dolphin2.sdkmesh" />
+    <None Include="Assets\Dolphin3.sdkmesh" />
+    <None Include="Assets\DolphinTween.xvu" />
+    <None Include="Assets\seafloor.sdkmesh" />
+    <None Include="Assets\SeaFloor.xvu" />
+    <None Include="Assets\ShadeCausticsPixel.xpu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+</Project>

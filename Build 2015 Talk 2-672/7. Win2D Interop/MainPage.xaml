@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="_7.Win2D_Interop.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_7.Win2D_Interop"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Dark"
+    >
+
+    <Grid x:Name="myGrid" Background="Black">
+        <Button x:Name="button" Content="Rub 2 sticks together" HorizontalAlignment="Left" VerticalAlignment="Top" Height="107" Width="270" Margin="31,26,0,0" Click="button_Click" />
+    </Grid>
+</Page>
